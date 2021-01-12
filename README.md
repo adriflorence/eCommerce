@@ -2,8 +2,12 @@
 
 The template is written in Java using Spring Boot, Hibernate ORM, and the H2 database.
 
-* `JpaRepository` interfaces for each model that allow Hibernate to connect them with the database so the data can be accessed in the code. 
-* `data.sql`: Spring will run this file every time the application starts to populate the database
+Key security and DevOps skills:
+- Demonstrate correct handling of authorization with proper security using JWT.
+- Write tests and meet an acceptable code coverage level.
+- Identify the correct metrics for logging, in order to monitor a system.
+- Index metrics to Splunk.
+- Demonstrate configuration and automation of the CI/CD pipeline.
 
 ## Examples
 To create a new user  send a POST request to:
