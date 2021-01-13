@@ -1,0 +1,13 @@
+13:45:06.937 [main] ERROR c.a.e.controllers.UserController - Error with user password. Cannot create user testUser
+13:45:06.942 [main] INFO  c.a.e.controllers.UserController - User is created with username 
+13:45:06.949 [main] ERROR c.a.e.controllers.UserController - Error with user password. Cannot create user testUser
+13:49:07.760 [main] INFO  c.a.e.controllers.UserController - There are no items returned for user Square Widget
+13:49:07.765 [main] INFO  c.a.e.controllers.UserController - Items were successfully fetched for user Round Widget
+13:49:22.345 [main] ERROR c.a.e.controllers.UserController - Order could not be submitted. User nobody not found.
+13:49:22.364 [main] INFO  c.a.e.controllers.UserController - Order was successfully submitted for user adri 
+13:49:29.722 [main] INFO  c.a.e.controllers.UserController - Item was successfully added to the cart for user adri
+13:49:29.739 [main] INFO  c.a.e.controllers.UserController - Item was successfully added to the cart for user adri
+13:49:29.740 [main] INFO  c.a.e.controllers.UserController - Item with id 2 not found.
+13:49:29.741 [main] INFO  c.a.e.controllers.UserController - User nobody not found.
+13:49:29.742 [main] INFO  c.a.e.controllers.UserController - Item with id 2 not found.
+13:49:29.743 [main] INFO  c.a.e.controllers.UserController - User nobody not found.
