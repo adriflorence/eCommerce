@@ -38,15 +38,17 @@ public class UserControllerTest {
         user.setUsername("adri");
         user.setPassword("securep@ssword");
         user.setCart(cart);
+
+        // stubbing
         when(userRepository.findByUsername("adri")).thenReturn(user);
         when(userRepository.findById(0L)).thenReturn(java.util.Optional.of(user));
         when(userRepository.findByUsername("nobody")).thenReturn(null);
+        when(encoder.encode("testPassword")).thenReturn("hashedPassword");
+
     }
 
     @Test
     public void create_user_happy_path() throws Exception {
-        // stubbing
-        when(encoder.encode("testPassword")).thenReturn("hashedPassword");
         CreateUserRequest request = new CreateUserRequest();
         request.setUsername("testUser");
         request.setPassword("testPassword");
@@ -102,7 +104,7 @@ public class UserControllerTest {
     public void find_user_by_name_fail() {
         final ResponseEntity<User> response = userController.findByUserName("nobody");
         assertNotNull(response);
-        assertEquals(404, response.getStatusCodeValue());
+        assertEquals(404, response.getStatusCodeValue()); // Not Found
     }
 
     @Test
